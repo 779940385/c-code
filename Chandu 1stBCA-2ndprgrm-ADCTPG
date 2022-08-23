@@ -1,0 +1,25 @@
+#include<stdio.h>
+main()
+{
+	int col,i,j,s;
+	printf("enter how many column=");
+	scanf("%d",&col);
+	int a[3][col];
+	printf("enter elements into array\n");
+	for(i=0;i<3;i++)
+	{
+	   for(j=0;j<col;j++)
+	   {
+	   	scanf("%d",&a[i][j]);
+	   }
+    }
+	for(i=0;i<col;i++)
+	{
+		s=0;
+		for(j=0;j<3;j++)
+		{
+			s=s+a[i][j];
+		}
+printf("%d column sum=%d\n",i+1,s);
+	}
+}
