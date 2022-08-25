@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+    int c=0,l,i;
+    char ch[100];
+    gets(ch);
+    l=strlen(ch);
+    for(i=0;i<=l;i++){
+        if(ch[i]==' '||ch[i]=='\0'){
+            c++;
+        }
+    }
+    printf("%d",c);
+}
