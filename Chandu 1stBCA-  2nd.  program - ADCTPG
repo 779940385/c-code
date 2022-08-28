@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+    int i,j,k,l,x,m,o,n;
+    char c[20];
+    gets(c);
+    l=strlen(c);
+    x=l;
+    for(i=0;i<l;i++){
+    	n=0;
+        for(j=0;j<x;j++){
+        	m=i;
+        	o=n;
+            while(m>=0){
+            printf("%c",c[o]);
+            o++;
+            m--;
+            }
+            printf("\n");
+            n++;
+        }
+        x--;
+    }
+}
