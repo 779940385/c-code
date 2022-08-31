@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<string.h>
+main() {
+    int i,j,l;
+    char c[20];
+    gets(c);
+    l=strlen(c);
+    for(i=0;i<l;i++){
+        if(c[i]=='a'){
+            c[i]='a'-32;
+            printf("%c",c[i]);
+        }
+        else{
+            printf("%c",c[i]);
+    }
+}
+}
