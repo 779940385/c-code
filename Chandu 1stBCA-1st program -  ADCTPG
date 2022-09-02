@@ -1,0 +1,28 @@
+#include<stdio.h>
+int evenodd(int);
+main()
+{
+	int a,r;
+	printf("enter any value:");
+	scanf("%d",&a);
+	r=evenodd(a);
+	if(r==0)
+	{
+		printf("even");
+	}
+	else
+	{
+		printf("odd");
+	}
+}
+int evenodd(int a)
+{
+	if(a%2==0)
+	{
+		return 0;
+	}
+	else
+	{
+		return 1;
+	}
+}
